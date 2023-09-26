@@ -1,0 +1,30 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/*.{js,ts}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "keywords": [],
+  "author": "BB-Code <15919854639@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^8.50.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
