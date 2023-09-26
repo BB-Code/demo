@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"the test is runned\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
   },
   "lint-staged": {
     "src/*.{js,ts}": [
       "prettier --write",
       "eslint --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "keywords": [],
   "author": "BB-Code <15919854639@163.com>",
@@ -22,6 +28,8 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
